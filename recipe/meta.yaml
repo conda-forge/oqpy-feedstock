@@ -1,5 +1,5 @@
 {% set name = "oqpy" %}
-{% set version = "0.3.1" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oqpy-{{ version }}.tar.gz
-  sha256: ecc955b940334c8ee2ab157718ba6a10cd05f4f1442ee9d1519188965699e83b
+  sha256: 83a0d98ad95edffe74fbf843ea0825599eff7941e7b2cd5d0f23e9eab5a91853
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.7,<4.0
     - mypy_extensions >=0.2.0
     - numpy >=1.14.5
-    - openpulse >=0.4.2
+    - openpulse >=0.4.1,<0.5.0
     - typing-extensions >=3.10.0.2
 
 test:
