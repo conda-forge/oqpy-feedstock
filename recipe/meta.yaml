@@ -1,5 +1,5 @@
 {% set name = "oqpy" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oqpy-{{ version }}.tar.gz
-  sha256: 83a0d98ad95edffe74fbf843ea0825599eff7941e7b2cd5d0f23e9eab5a91853
+  sha256: f6d7b90f790373d795194a3050c7055c0c313159cc726fcfc610de69b5a7252c
 
 build:
   noarch: python
